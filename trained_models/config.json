@@ -1,0 +1,30 @@
+{
+  "act_dim": 29,
+  "action_tanh": true,
+  "activation_function": "relu",
+  "architectures": [
+    "TrainableDT"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "hidden_size": 128,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "max_ep_len": 4096,
+  "model_type": "decision_transformer",
+  "n_head": 1,
+  "n_inner": null,
+  "n_layer": 3,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "state_dim": 291,
+  "torch_dtype": "float32",
+  "transformers_version": "4.45.0.dev0",
+  "use_cache": true,
+  "vocab_size": 1
+}

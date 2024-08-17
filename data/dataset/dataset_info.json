@@ -1,0 +1,52 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "train": {
+      "actions": {
+        "feature": {
+          "feature": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "dones": {
+        "feature": {
+          "dtype": "bool",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "observations": {
+        "feature": {
+          "feature": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "rewards": {
+        "feature": {
+          "dtype": "float32",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      }
+    },
+    "state_mean": {
+      "dtype": "float32",
+      "_type": "Value"
+    },
+    "state_std": {
+      "dtype": "float32",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
