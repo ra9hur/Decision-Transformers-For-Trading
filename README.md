@@ -5,7 +5,7 @@ DRL framework is powerful in solving dynamic decision making problems by learnin
 Automated trading is essentially making dynamic decisions, namely to decide where to trade, at what price, and what quantity, over a highly stochastic and complex stock market. Taking many complex financial factors into account, DRL trading agents build a multi-factor model and provide algorithmic trading strategies, which are difficult for human traders.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4d8149a7-5dae-4197-9b48-108be64a30e0" alt="image" width="800" height="auto">
+<img src="https://github.com/user-attachments/assets/4d8149a7-5dae-4197-9b48-108be64a30e0" alt="image" width="600" height="auto">
 </p>
 
 However, current algorithms for reinforcement learning are online based, involves direct interaction with the environment, real-time data collection, and continuous learning. These are mostly based on dynamic programming, which involves following an inner loop optimization problem that's very unstable. The variance in the returns that we tend to get in RL is really huge even after multiple rounds of experimentation.
@@ -18,7 +18,7 @@ The main idea is that instead of training a policy using RL methods, such as fit
 This is a complete shift in the Reinforcement Learning paradigm since we use generative trajectory modeling (modeling the joint distribution of the sequence of states, actions, and rewards) to replace conventional RL algorithms. This means that in Decision Transformers, we don’t maximize the return but rather generate a series of future actions that achieve the desired return.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/41e3bc10-2594-4c05-b48f-17666cc8fb1c" alt="image" width="800" height="auto">
+<img src="https://github.com/user-attachments/assets/41e3bc10-2594-4c05-b48f-17666cc8fb1c" alt="image" width="600" height="auto">
 </p>
 
 Decision Transformers are offline RL based, involves training an agent using a pre-collected dataset without interacting with the environment. The agent learns from a fixed dataset, which can be collected from previous interactions, human demonstrations, or other sources.
@@ -47,6 +47,10 @@ In order to train the model with the trainer class, we first need to ensure the 
 4. **Evaluate** \
 The model's prediction is conditioned on sequences of states, actions, time-steps and returns. The action for the current time-step is included as zeros and masked in to not skew the model's attention distribution.
 
+Tried setting, \ 
+TARGET_RETURN = 1.1 * (maximum reward in training dataset) \
+Results did not change at all.
+
 ***
 
 ## Visualize and analyze performance
@@ -59,7 +63,7 @@ PPO agent was used to generate trajectories which served as input to train Decis
 #### Decision Transformers Vs Dow Jones Index
 ![DT_VS_DJI](https://github.com/user-attachments/assets/57918c30-a072-468b-ba46-65617f15c45d)
 
-Here, Decision Transformer's predictions are slightly better and atleast as good as the performance of Dow Jones Index.
+Here, Decision Transformer's predictions are slightly better OR atleast as good as the performance of Dow Jones Index.
 
 #### Decision Transformers Vs Mean Variance Optimization Vs Dow Jones Index
 ![DT_VS_MVO_VS_DJI](https://github.com/user-attachments/assets/34c0e9a1-d039-4fe1-a5ff-594aadbd34c1)
