@@ -46,8 +46,7 @@ In order to train the model with the trainer class, we first need to ensure the 
 
 4. **Evaluate** \
 The model's prediction is conditioned on sequences of states, actions, time-steps and returns. The action for the current time-step is included as zeros and masked in to not skew the model's attention distribution.
-
-Tried setting, \ 
+Tried setting,  <br />
 TARGET_RETURN = 1.1 * (maximum reward in training dataset) \
 Results did not change at all.
 
