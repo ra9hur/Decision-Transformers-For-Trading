@@ -74,7 +74,11 @@ Mean Variance Optimization computes co-variance between stocks, uses this inform
 
 No specific attempts were made to fine-tune PPO training parameters. With necessary changes, PPO predictions could get better.
 
-***
+
+## Improvements
+1. As discussed in [Offline Reinforcement Learning: BayLearn 2021 Keynote Talk](#references), offline learning followed by online fine-tuning is expected to yield better performance and this should be tried out.
+2. Market sentiment is the current attitude of investors overall regarding a company, a sector, or the financial market as a whole. The mood of the market is affected by crowd psychology. It is revealed through buying and selling activity. This plays a huge role in predicting movement of stock prices and should be considered for predictions.
+
 
 ## References:
 
