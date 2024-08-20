@@ -26,7 +26,7 @@ Decision Transformers are offline RL based, involves training an agent using a p
 #### FinRL
 For trading and financial functionality, found FinRL very useful. FinRL is a open source framework for financial reinforcement learning. It provides a framework that supports various markets, SOTA DRL algorithms, benchmarks of many quant finance tasks, live trading, etc.
 
-Existing FinRL framework that currently supports DRL algorithms such PPO, A2C is extended to support Decision Transformers.
+Existing FinRL framework that currently supports DRL algorithms such as PPO, A2C. In this prototype, the framework is extended to support Decision Transformers.
 
 ***
 
@@ -67,7 +67,7 @@ Here, Decision Transformer's predictions are slightly better OR atleast as good 
 #### Decision Transformers Vs Mean Variance Optimization Vs Dow Jones Index
 ![DT_VS_MVO_VS_DJI](https://github.com/user-attachments/assets/34c0e9a1-d039-4fe1-a5ff-594aadbd34c1)
 
-Mean Variance Optimization computes co-variance between stocks, uses this information to mitigate risk and then create a portfolio. This clearly outperforms Decision Transformer and Dow Jones Index.
+Mean Variance Optimization computes co-variance among stocks, uses this information to create a portfolio in order to maximize returns with minimum risk. As seen in the chart, this clearly outperforms Decision Transformer and Dow Jones Index.
 
 #### PPO Vs Dow Jones Index
 ![PPO_VS_DJI](https://github.com/user-attachments/assets/266458d0-5e49-4558-9ad1-38a5b16d2254)
